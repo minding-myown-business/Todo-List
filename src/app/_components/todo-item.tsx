@@ -8,7 +8,13 @@ export const TodoItem = ({
   toggleFunc: () => void;
 }) => {
   return (
-    <li className={completed ? "text-justify line-through" : "text-justify"}>
+    <li
+      className={
+        completed
+          ? "my-1 flex cursor-pointer items-center gap-2 rounded-md border p-2 text-justify line-through hover:bg-gray-50"
+          : "my-1 flex cursor-pointer items-center gap-2 rounded-md border bg-gray-50 p-2 text-justify text-gray-500 opacity-75 hover:bg-gray-50"
+      }
+    >
       <input
         type="checkbox"
         name={text}

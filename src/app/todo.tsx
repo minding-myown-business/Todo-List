@@ -1,3 +1,4 @@
+"use client";
 import { useState, useEffect } from "react";
 import { TodoItem } from "./_components/todo-item";
 import { api } from "~/trpc/server";
