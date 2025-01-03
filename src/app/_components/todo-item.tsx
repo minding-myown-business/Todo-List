@@ -8,13 +8,13 @@ export const TodoItem = ({
   toggleFunc: () => void;
 }) => {
   return (
-    <li>
+    <li className={completed ? "text-justify line-through" : "text-justify"}>
       <input
         type="checkbox"
         name={text}
         id={text}
         checked={completed}
-        onClick={toggleFunc}
+        onChange={toggleFunc}
       />
       <label htmlFor={text}>{text}</label>
     </li>
