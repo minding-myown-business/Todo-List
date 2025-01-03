@@ -40,7 +40,7 @@ export const TodoList = () => {
               key={item.key}
               toggleFunc={() => {
                 void api.todo.updateCompletedStatus({
-                  // key: item.key,
+                  key: item.key,
                   completed: !item.completed,
                 });
               }}
